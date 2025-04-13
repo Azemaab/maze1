@@ -108,4 +108,16 @@ class MazePrinter {
             for (int x = 0; x < width; x++) {
                 System.out.print(maze[y][x][0] == 1 ? " " : "|");
                 System.out.print(path != null && path[y][x] ? " * " : "   ");
+            }
+            System.out.println("|");
+        }
+
+        // bottom wall
+        for (int x = 0; x < width; x++) {
+            System.out.print("+---");
+        }
+        System.out.println("+");
+        
+    }
+}
         
