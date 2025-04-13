@@ -12,3 +12,17 @@ public class Main {
         boolean[][] path = Pathfinder.findPath(maze);
         MazePrinter.printMaze(maze, path);
         scanner.close();
+    }
+}
+
+// MazeGenerator class
+class MazeGenerator {
+    private final int width, height;
+    public final int[][][] maze;
+    private final boolean[][] visited;
+
+    public MazeGenerator(int width, int height) {
+        this.width = width;
+        this.height = height;
+        this.maze = new int[height][width][4];
+        
