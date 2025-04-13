@@ -11,3 +11,4 @@ public class Main {
         int[][][] maze = generator.maze;
         boolean[][] path = Pathfinder.findPath(maze);
         MazePrinter.printMaze(maze, path);
+        scanner.close();
