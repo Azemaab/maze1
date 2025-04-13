@@ -9,3 +9,4 @@ public class Main {
 
         MazeGenerator generator = new MazeGenerator(width, height);
         int[][][] maze = generator.maze;
+        boolean[][] path = Pathfinder.findPath(maze);
